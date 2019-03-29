@@ -33,7 +33,8 @@
 ##### [See project original description here](https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-technical-documentation-page)
 
 #### Additionnal Users stories: 
-[x] full responsive  
+- [x] Full responsive  
+- [x] Dark mode
 <br>
 
 ### How the project works
