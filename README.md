@@ -15,20 +15,10 @@
 
 1. I can see a `main` element with a corresponding `id="main-doc"`, which contains the page's main content (technical documentation)
 1. Within the `#main-doc` element, I can see several `section elements`, each with a class of `main-section`. There should be a minimum of 5
-1. I can see a `form` with `id="survey-form"`
-1. Inside the form element, I am required to enter my name in a field with `id="name"`
-1. Inside the form element, I am required to enter an email in a field with `id="email"`
-1. If I enter an email that is not formatted correctly, I will see an HTML5 validation error
-1. Inside the form, I can enter a number in a field with `id="number"`
-1. If I enter non-numbers in the number input, I will see an HTML5 validation error
-1. If I enter numbers outside the range of the number input, which are defined by the `min` and `max` attributes, I will see an HTML5 validation error
-1. For the name, email, and number input fields inside the form I can see corresponding labels that describe the purpose of each field with the following ids: `id="name-label"`, `id="email-label"`, and `id="number-label"`
-1. For the name, email, and number input fields, I can see placeholder text that gives me a description or instructions for each field
-1. Inside the form element, I can select an option from a dropdown that has a corresponding `id="dropdown"`
-1. Inside the form element, I can select a field from one or more groups of radio buttons. Each group should be grouped using the `name` attribute
-1. Inside the form element, I can select several fields from a series of checkboxes, each of which must have a `value` attribute
-1. Inside the form element, I am presented with a `textarea` at the end for additional comments
-1. Inside the form element, I am presented with a button with `id="submit"` to submit all my inputs
+1. The first element within each `.main-section` should be a `header` element which contains text that describes the topic of that section
+1. Each `section` element with the class of `main-section` should also have an id that corresponds with the text of each `header` contained within it. Any spaces should be replaced with underscores (e.g. The `section` that contains the header "Javascript and Java" should have a corresponding `id="Javascript_and_Java"`)
+1. The `.main-section` elements should contain at least 10 `p` elements total (not each)
+
 
 ##### [See project original description here](https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-survey-form)
 
