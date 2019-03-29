@@ -35,7 +35,6 @@
 #### Additionnal Users stories: 
 - [x] Full responsive  
 - [x] Dark mode
-<br>
 
 ### How the project works
 
