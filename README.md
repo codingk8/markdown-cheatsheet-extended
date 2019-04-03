@@ -1,4 +1,4 @@
-<h1 align="center">Markdown Up and Running - An extended Cheatsheet</h1>
+<h1 align="center">Markdown up and running - An extended cheatsheet</h1>
 
 <h2 align="center">Project made for <a href="https://www.freecodecamp.org/">freeCodeCamp</a><br>"Responsive Web Design" certification</h2>
 
