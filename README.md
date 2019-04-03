@@ -82,7 +82,7 @@
 
 ## Intellectual property and copyrights Disclaimer
 
-### Visual elements, logos and brand elements rights and copyrights belong to [freeCodeCamp](https://www.freecodecamp.org).
+### Soon
 <br>
 
 ## Acknowledgements & Resources
