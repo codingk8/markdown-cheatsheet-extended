@@ -87,7 +87,7 @@
 
 ## Acknowledgements & Resources
 
-Soon  
+[Here](#)
 <br>
 
 ---
