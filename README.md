@@ -58,7 +58,6 @@
 ## Author
 
 [Codingk8](https://github.com/codingk8)  
-<a href="https://github.com/codingk8"><i class="fas fa-desktop"></i></a>
 <br>
 
 ## Open-source & contributions
