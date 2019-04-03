@@ -75,11 +75,6 @@
 ### If you're a freeCodeCamp student, please use this project as an inspiration and write your own code.<br>It's what makes us all better developers :wink:
 <br>
 
-## GDPR Disclaimer
-
-### This project does not work for real. No personal data are collected from it.
-<br>
-
 ## Intellectual property and copyrights Disclaimer
 
 ### Soon
