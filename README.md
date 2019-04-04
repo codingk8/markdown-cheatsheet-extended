@@ -48,7 +48,7 @@
 * [Google fonts](https://fonts.google.com/) for Ubuntu Mono
 * [Font Awesome](https://fontawesome.com/) icons
 
-### [Click here to see the project live](#)
+### [Click here to see the project live](https://codingk8.github.io/markdown-up-and-running/)
 <br>
 
 ---
@@ -77,12 +77,12 @@
 
 ## Intellectual property and copyrights Disclaimer
 
-[Here](#)
+[Here](https://codingk8.github.io/markdown-up-and-running/#About_Markdown)
 <br>
 
 ## Acknowledgements & Resources
 
-[Here](#)
+[Here](https://codingk8.github.io/markdown-up-and-running/#Additional_Resources)
 <br>
 
 ---
