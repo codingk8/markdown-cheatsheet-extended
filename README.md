@@ -77,7 +77,7 @@
 
 ## Intellectual property and copyrights Disclaimer
 
-### Soon
+[Here](#)
 <br>
 
 ## Acknowledgements & Resources
@@ -87,6 +87,6 @@
 
 ---
 
-##### Latest update: 20190329
+##### Latest update: 20190404
 
 ---
