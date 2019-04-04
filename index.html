@@ -1,0 +1,727 @@
+<!--
+    Made with code and care in Paris, France, by Codingk8 - 2019 - Twitter: @codingk8
+
+    Project made for the freeCodeCamp curriculum, "Responsive Web Design" Certification
+    Project #4 - Technical Documentation
+
+    Title: Markdown up and running - An extended cheatsheet
+-->
+
+<!DOCTYPE html>
+
+  <html lang="en" dir="auto">
+
+    <head>
+
+        <meta charset="utf-8">
+
+        <title>Markdown up and running</title>
+        <meta name="author"       content="Codingk8" />
+        <meta name="description"  content="freeCodeCamp - Responsive Web Design Certification - Project #1-4, made by Codingk8" />
+        <meta name="keywords"     content="freeCodeCamp, certification, responsive, web design, project, 
+                                        html, css, flexbox, bootstrap, javascript, jquery, font awesome" />
+
+        <!-- Favicon links -->
+        <link rel="icon" type="image/png" href="assets/favicon/favicon.png" />
+        <link rel="shortcut icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
+        
+        <!-- Responsive viewport - ALWAYS CHECK ON BOOTSTRAP SITE 20181201 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <!-- Import Bootstrap CDN - ALWAYS CHECK THE VERSION 20190214 - Put at the bottom of the file -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+        <!-- Import jQuery CDN is at the bottom of the file -->
+
+        <!-- Import Font Awesome CDN-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
+            integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+        <!-- Import Google fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
+
+        <!-- Local stylesheet link -->
+        <link href="style.css" rel="stylesheet" type="text/css" media="screen">
+ 
+    </head>
+    
+    <body id="container" class="light" data-spy="scroll" data-target="#list" data-offset="0">
+
+        <!-- Header -->
+        <header id="header">
+            <h1 id="header-title">Markdown up and running - An extended cheatsheet</h1>
+            <img id="logo" src="assets/images/markdownlogo65.png" alt="freeCodeCamp logo">
+        </header>
+
+        <!-- 1st Main: NavBar + Tech Doc-->
+        <div id="content" class="container-fluid">
+
+            <!-- NavBar -->
+            <nav id="navbar">
+                <header id="nav-header">Sections</header>
+                <ol id="list" class="list-group">
+                    <li><a class="list-group-item list-group-item-action nav-link" href="#About_Markdown">About Markdown</a></li>
+                    <li><a class="list-group-item list-group-item-action nav-link" href="#Text_and_Line_breaks">Text and Line breaks</a></li>
+                    <li><a class="list-group-item list-group-item-action nav-link" href="#Headings_and_Titles">Headings and Titles</a></li>
+                    <li><a class="list-group-item list-group-item-action nav-link" href="#Horizontal_Rules">Horizontal Rules</a></li>
+                    <li><a class="list-group-item list-group-item-action nav-link" href="#Styling_and_Emphasis">Styling and Emphasis</a></li>
+                    <li><a class="list-group-item list-group-item-action nav-link" href="#Quotes">Quotes</a></li>
+                    <li><a class="list-group-item list-group-item-action nav-link" href="#Lists">Lists</a></li>
+                    <li><a class="list-group-item list-group-item-action nav-link" href="#Code_Blocks">Code Blocks</a></li>
+                    <li><a class="list-group-item list-group-item-action nav-link" href="#Tables">Tables</a></li>
+                    <li><a class="list-group-item list-group-item-action nav-link" href="#Links">Links</a></li>
+                    <li><a class="list-group-item list-group-item-action nav-link" href="#Images">Images</a></li>
+                    <li><a class="list-group-item list-group-item-action nav-link" href="#Backslash_Escapes">Backslash Escapes</a></li>
+                    <li><a class="list-group-item list-group-item-action nav-link" href="#HTML_in_Markdown">HTML in Markdown</a></li>
+                    <li><a class="list-group-item list-group-item-action nav-link" href="#GitHub_Flavored_Markdown">GitHub Flavored Markdown</a></li>
+                    <li><a class="list-group-item list-group-item-action nav-link" href="#Contact">Contact</a></li>
+                    <li><a class="list-group-item list-group-item-action nav-link" href="#Additional_Resources">Additional Resources</a></li>
+                </ol>
+                <button type="button" name="darklight_mode" onclick="toggleDarkLight()" title="Toggle button darklight mode" id="mode">Light | Dark</button>
+            </nav>
+
+            <!-- Article: technical documentation -->
+            <main id="main-doc" class="container-fluid">
+
+                <div id="intro">
+                    <h2 class="section-title">All I've found useful concerning Markdown<br>
+                        <span class="bold">with my favorite tips and shortcuts ✨</span></h2>
+                </div>
+                
+                <!-- Section 1 - About -->
+                <section id="About_Markdown" class="main-section">
+                    <header class="section-header">About Markdown</header>
+                    
+                    <h2 class="section-title">• What is Markdown</h2>
+                    <p class="mrg2">"Markdown is a lightweight markup language with plain text formatting syntax. 
+                        Its design allows it to be converted to many output formats, but the original tool by the same name only supports HTML. 
+                        Markdown is often used to format readme files, for writing messages in online discussion forums, and to create rich text 
+                        using a plain text editor.(...)<br>
+                        John Gruber created the Markdown language in 2004 in collaboration with Aaron Swartz on the syntax, 
+                        with the goal of enabling people "to write using an easy-to-read and easy-to-write plain text format (...)"."<br>
+                        <a class="resource-link margin-left" href="https://en.wikipedia.org/wiki/Markdown">Markdown on Wikipedia</a></p>
+                    
+                    <h2 class="section-title">• Use Markdown</h2>
+                    <p>Markdown is useful in GitHub and other version control softwares, as well as in Slack, Discord...</p>
+                    <p>It helps you display your content with more accuracy and style it your own way</p>
+                    <p class="bold mrg2">It's especially handy to create professional and polished README files 🙌for your GitHub repositories</p>
+                </section>
+
+                <!-- Section 2 - Paragraphs -->
+                <section id="Text_and_Line_breaks" class="main-section">
+                    <header class="section-header">Text and Line breaks</header>
+                    <h2 class="section-title">• Typing text and creating line breaks and paragraphs in Markdown</h2>
+                        <p>- If you type this:</p>
+                            <code class="code-ex mrg">"This is the first paragraph<br>
+                                and I want this to be on the line just below."
+                            </code>
+                            <p>You'll get something that will look like this below in Markdown:</p>
+                            <code class="code-ex mrg">"This is the first paragraph and I want this to be on the line just below."</code>
+                            <p class="mrg2">Probably not what you expected 🤔</p>
+                        <p>- Also, if you type this:</p>
+                            <code class="code-ex mrg">"This is the first paragraph<br>
+                                <br>and I want this to be on the line just below."
+                            </code>
+                            <p>You'll get something that will look like this below in Mardown:</p>
+                            <code class="code-ex mrg">"This is the first paragraph<br>
+                                <br>and I want this to be on the line just below."
+                            </code>
+                            <p class="mrg2">Probably not what you expected either ☹️</p>
+                        <p>- To get a simple line break like this:</p>
+                            <code class="code-ex mrg">"This is the first paragraph<br>
+                                and I want this to be on the line just below."
+                            </code>
+                            <p>You have two options:</p>
+                            <ul class="mrg2">
+                                <li>Add two spaces at the end of the first line</li>
+                                <li>Add a <code class="code-ex inline">&lt;br&gt;</code> tag at the end of the first line</li>
+                            </ul>
+                        <p class="mrg2">- To create a new paragraph, you must leave an empty line (2nd example above)</p>
+                </section>
+                
+                <!-- Section 3 - Titles -->
+                <section id="Headings_and_Titles" class="main-section">
+                    <header class="section-header">Headings and Titles</header>
+                    <h2 class="section-title">• Just like in HTML, there are 6 levels of titles in Markdown</h2>
+                        <p>Typing this:</p>
+                            <code class="code-ex mrg"># Heading 1<br>
+                                ## Heading 2<br>
+                                ### Heading 3<br>
+                                #### Heading 4<br>
+                                ##### Heading 5<br>
+                                ###### Heading 6
+                            </code>
+                        <p class="mrg">Will look like this below in Markdown:</p>
+                            <h1>Heading 1</h1><hr>
+                            <h2>Heading 2</h2><hr>
+                            <h3>Heading 3</h3>
+                            <h4>Heading 4</h4>
+                            <h5>Heading 5</h5>
+                            <h6 class="mrg2">Heading 6</h6>
+
+                    <p class="section-focus mrg">Tip: there is a shortcut for Headings 1 and 2</p>
+                        <p>- For Heading 1, typing this:</p>
+                            <code class="code-ex mrg">
+                                Heading<br>===
+                            </code>
+                        <p>Will produce a Heading 1 like this below in Markdown:</p>
+                        <h1>Heading 1</h1><hr class="mrg2">
+                        <p>- For Heading 2, typing this:</p>
+                            <code class="code-ex mrg">
+                                Heading<br>---
+                            </code>
+                        <p>Will produce a Heading 2 like this below in Markdown:</p>
+                        <h2>Heading 2</h2><hr class="mrg2">
+                </section>
+                
+                <!-- Section 4 - Rules-->
+                <section id="Horizontal_Rules" class="main-section">
+                    <header class="section-header">Horizontal Rules</header>
+                    <h2 class="section-title">• To create an horizontal divider in your page, Markdown has an option equivalent to the HTML &lt;hr&gt; tag, only a bit thicker</h2>
+                        <p>Typing three or more hyphens:</p>
+                            <code class="code-ex mrg">
+                                ---
+                            </code>
+                        <p>Or typing three or more asterisks:</p>
+                            <code class="code-ex mrg">
+                                ***
+                            </code>
+                        <p>Or typing three or more underscores:</p>
+                            <code class="code-ex mrg2">
+                                ___
+                            </code>
+                        <p>Will produce a line like this below in Markdown:</p>
+                            <hr id="hr-example" class="mrg2">
+                </section>
+                
+                <!-- Section 5 - Styling-->
+                <section id="Styling_and_Emphasis" class="main-section">
+                    <header class="section-header">Styling and Emphasis</header>
+                    <h2 class="section-title">• There are three main ways to add style to text in Markdown</h2>
+                        
+                        <p>- To add <span class="italic">italic</span> effect, you can type one underscore before and after your text:</p>
+                            <code class="code-ex mrg">_This creates italic effect_</code>
+                            <p>Or type one asterisk before and after your text:</p>
+                            <code class="code-ex mrg2">*this also creates italic effect*</code>
+                        
+                        <p>- To add <span class="bold">bold</span> effect, you can type two underscore before and after your text:</p>
+                            <code class="code-ex mrg">__This creates bold effect__</code>
+                            <p>Or type two asterisks before and after your text:</p>
+                            <code class="code-ex mrg2">**this also creates bold effect**</code>
+
+                        <p class="section-focus mrg">Tip: to help recognize different style easier and faster, 
+                            it is stongly suggested to use different notation for <span class="italic">italic</span> and <span class="bold">bold</span></p>
+                        <ol>
+                            <li>One underscore for italic and double asterisks for bold</li>
+                            <li>One asterisk for italic and double underscores for bold</li>
+                        </ol>
+                        <p>To combine them, typing this:</p>
+                            <code class="code-ex mrg">Combined style with both italic and bold: _**combined**_, or *__combined__* as well</code>
+                            <p>Will look like this below in Markdown:</p>
+                            <p class="mrg2">Combined style with both italic and bold: <span class="italic bold">combined</span>, 
+                                or <span class="italic bold">combined</span> as well 👏👏👏</p>
+                        
+                        <p>- To add <span class="strikethrough">strikethrough</span> effect, you can type two tilde before and after your text:</p>
+                            <code class="code-ex mrg2">~~This creates strikethrough effect~~</code>
+
+                        <p class="mrg2">- Some more styling in the <a class="resource-link" href="#HTML_in_Markdown">HTML in Markdown Section</a></p>
+                </section>
+                
+                <!-- Section 6 - Quotes -->
+                <section id="Quotes" class="main-section">
+                    <header class="section-header">Quotes</header>
+                    <h2 class="section-title">• Markdown allows you to showcase some text as a "blockquote"<br>
+                        These are all about adding a grey left border to the text and dealing with line breaks</h2>
+
+                        <p>Typing this:</p>
+                            <code class="code-ex mrg">
+                                > This is a quote
+                            </code>
+                            <p>Will look like this below in Markdown:</p>
+                            <div class="quote mrg2">This is a quote</div>
+
+                        <p class="mrg">- In case you want your quote on two or more lines (not paragraphs), 
+                            remember the <a class="resource-link" href="#Text_and_Paragraphs">first section</a> about how to break lines without creating a new paragraph, 
+                            and either add two spaces or add a &lt;br&gt; tag at the end of the first line.</p>
+                            <p>Typing this:</p>
+                            <code class="code-ex mrg">
+                                > This is the first line of the quote&lt;br&gt;<br>
+                                > and this is the second line of the quote
+                            </code>
+                            <p>Will look like this below in Markdown:</p>
+                            <div class="quote mrg2">This is the first line of the quote<br>
+                                and this is the second line of the quote</div>
+
+                        <p>- In the case your quote is longer than one line, typing this:</p>
+                            <code class="code-ex mrg">
+                                > Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </code>
+                            <p>Will look like this below in Markdown:</p>
+                            <div class="quote mrg2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+
+                        <p>- In case you want to add the name of the author on the last line, typing this:</p>
+                            <code class="code-ex mrg">
+                                > This is the quote&lt;br&gt;<br>
+                                > - from Author
+                            </code>
+                            <p>Will look like this below in Markdown:</p>
+                            <div class="quote mrg2">This is the quote<br>
+                                • from Author</div>
+
+                        <p class="mrg">Note: you can also <a class="resource-link" href="#Styling_and_Emphasis">style</a> your quote text with 
+                            <span class="italic">italic</span>, <span class="bold">bold</span> or <span class="strikethrough">strikethrough</span>, 
+                            and you can add <a class="resource-link" href="#Links">links</a> or <a class="resource-link" href="#Images">images</a> inside.</p>
+                        <p>Typing this:</p>
+                            <code class="code-ex mrg">
+                                > **Markdown** is a _lightweight markup language_ with plain text formatting syntax designed so that it can be converted to **HTML** and many other formats.<br>
+                                > - from [Wikipedia](https://en.wikipedia.org/wiki/Markdown)
+                            </code>
+                            <p>Will look like this below in Markdown:</p>
+                            <div class="quote mrg2"><span class="bold">Markdown</span> is a <span class="italic">lightweight markup language</span> with plain text formatting syntax designed so that it can be converted to <span class="bold">HTML</span> and many other formats.<br>
+                                • from <a href="https://en.wikipedia.org/wiki/Markdow">Wikipedia</a></div>
+                </section>
+
+                <!-- Section 7 - Lists -->
+                <section id="Lists" class="main-section">
+                    <header class="section-header">Lists</header>
+                    <h2 class="section-title">• In Markdown, you can create ordered or unordered lists, as well as nested ordered or unordered lists</h2>
+                    <p class="mrg">- You can create unordered list by using a "-" or a "*" in front of each item</p>
+                    <p>Typing this:</p>
+                        <code class="code-ex mrg">
+                            - item<br>
+                            - item<br>
+                            - item<br>
+                        </code>
+                        <p>Or typing this:</p>
+                        <code class="code-ex mrg">
+                            * item<br>
+                            * item<br>
+                            * item
+                        </code>
+                        <p>Will look like this below in Markdown:</p>
+                        <ul class="mrg2">
+                            <li>item</li>
+                            <li>item</li>
+                            <li>item</li>
+                        </ul>
+
+                    <p>- You can create ordered list by using numbers</p>
+                    <p class="section-focus mrg">Tip: no need to number your items yourself, Markdown will do it for you 😉</p>
+                    <p>Typing this:</p>
+                        <code class="code-ex mrg">1. item 1<br>
+                            2. item 2<br>
+                            3. item 3
+                        </code>
+                        <p>Or typing this:</p>
+                        <code class="code-ex mrg">0. item 1<br>
+                            0. item 2<br>
+                            0. item 3
+                        </code>
+                        <p>Will look like below this below in Markdown:</p>
+                        <ol class="mrg2">
+                            <li>item 1</li>
+                            <li>item 2</li>
+                            <li>item 3</li>
+                        </ol>
+
+                    <p class="mrg">- You can also create nested ordered or unordered lists (up to three levels)</p>
+                    <p>For unordered lists, typing this:</p>
+                        <code class="code-ex mrg">- Category 1
+                            <br><span class="nl-ex">- item 1</span>
+                            <br><span class="nl-ex">- item 2</span>
+                            <br>- Category 2
+                            <br><span class="nl-ex">- item 1</span>
+                            <br><span class="nl-ex">- item 2</span>
+                        </code>
+                        <p>Or typing this:</p>
+                        <code class="code-ex mrg">* Category 1
+                            <br><span class="nl-ex">* item 1</span>
+                            <br><span class="nl-ex">* item 1</span>
+                            <br>* Category 2
+                            <br><span class="nl-ex">* item 1</span>
+                            <br><span class="nl-ex">* item 1</span>
+                        </code>
+                        <p>Or typing this:</p>
+                        <code class="code-ex mrg">+ Category 1
+                            <br><span class="nl-ex">+ item 1</span>
+                            <br><span class="nl-ex">+ item 1</span>
+                            <br>+ Category 2
+                            <br><span class="nl-ex">+ item 1</span>
+                            <br><span class="nl-ex">+ item 1</span>
+                        </code>
+                        <p class="mrg">Or mixing "-" and "*" and "+"</p>
+                        <p>Will look like this below in Markdown:</p>
+                        <ul class="mrg2">
+                            <li>Category 1
+                                <ul>
+                                    <li>item 1</li>
+                                    <li>item 2</li>
+                                </ul>
+                            </li>
+                            <li>Category 2
+                                <ul>
+                                    <li>item 1</li>
+                                    <li>item 2</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <p>Note: nested ordered lists work the same 😎</p>
+                        <p class="mrg2">More <a class="resource-link" href="https://www.markdownguide.org/basic-syntax#lists" target="_blank">details here</a></p>
+                </section>
+                
+                <!-- Section 8 - Code -->
+                <section id="Code_Blocks" class="main-section">
+                    <header class="section-header">Code Blocks</header>
+                    <h2 class="section-title">• You can add two categories of code blocks to your Markdown 👩‍💻👨‍💻</h2>
+
+                    <p class="mrg">- Inline code blocks use back-ticks</p>
+                        <p>Typing:</p>
+                            <code class="code-ex mrg">
+                                This is some inline `code`
+                            </code>
+                        <p>Will look like this below in Markdown:</p>
+                        <p class="mrg2">This is some inline <span class="md-code">code</span></p>
+
+                    <p class="mrg">- Blocks of code are either indented with four spaces, 
+                        or fenced by lines with three back-ticks ( ```) but only the latter solution allows for syntax highlightning 
+                        where it's supported so that it's considered "best practice"</p>
+                        <p>Typing:</p>
+                            <code class="code-ex mrg">
+                                ```js<br>
+                                console.log('This is JavaScript syntax highlighting!');<br>
+                                ```
+                            </code>
+                        <p>Will look like this below in Markdown:</p>
+                        <code class="md-code2 mrg2">
+                            <span class="blueviolet">console</span><span class="blue">.log</span><span class="black">('This is JavaScript syntax highlighting!');</span>
+                        </code>
+                </section>
+
+                <!-- Section 9 - Tables -->
+                <section id="Tables" class="main-section">
+                    <header class="section-header">Tables</header>
+                    <h2 class="section-title">• Tables in Markdown are a great way to organise your informations</h2>
+
+                    <p class="mrg">Tables are not a part of Markdown spec, but thet are widely supported, and especially on GitHub</p>
+
+                    <p class="mrg2">The creation of tables in Markdown looks exactly like drawing with dashes (-) and pipes (|)<br>
+                        You may also use colons to align columns.</p>
+                    <p class="mrg">Typing this:</p>
+                        <code class="code-ex mrg">
+                            | Head         | of       | Table         |<br>
+                            | ------------ |:--------:| ------------ :|<br>
+                            | left-aligned | centered | right-aligned |<br>
+                            | left-aligned | centered | right-aligned |
+                        </code>
+                    <p class="mrg">Will look like this below in Markdown:</p>
+                    <table class="mrg2">
+                        <thead>
+                            <tr>
+                                <th class="left">Head</th>
+                                <th class="center">of</th>
+                                <th class="right">Table</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="left">left-aligned</td>
+                                <td class="center">centered</td>
+                                <td class="right">right-aligned</td>
+                            </tr>
+                            <tr>
+                                <td class="left td2">left-aligned</td>
+                                <td class="cente td2">centered</td>
+                                <td class="right td2">right-aligned</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <p class="section-focus">Tip: there are three best practices to remember</p>
+                    <ul class="mrg2">
+                        <li>There must be at least 3 dashes separating each header cell. Colons to align columns count as dashes</li>
+                        <li>The outer pipes (|) are optional</li>
+                        <li>You can use inline Markdown in cells</li>
+                    </ul>
+                            
+                    <p class="mrg">This means typing this:</p>
+                        <code class="code-ex mrg">
+                            Markdown | Less | Pretty<br>
+                            --: | :-: | :--<br>
+                            _Still_ | renders | **nicely**<br>
+                            1 | 2 | 3
+                        </code>
+                    <p class="mrg">Will look like this below in Markdown:</p>
+                        <table class="mrg2">
+                            <thead>
+                                <tr>
+                                    <th class="right">Markdown</th>
+                                    <th class="center">Less</th>
+                                    <th class="left">Pretty</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="right italic">Still</td>
+                                    <td class="center">renders</td>
+                                    <td class="left bold">nicely</td>
+                                </tr>
+                                <tr>
+                                    <td class="right td2">1</td>
+                                    <td class="center td2">2</td>
+                                    <td class="left td2">3</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                </section>
+
+                <!-- Section 10 - Links -->
+                <section id="Links" class="main-section">
+                    <header class="section-header">Links</header>
+                    <h2 class="section-title">• There are two sorts of links in Markdown</h2>
+                    
+                    <p class="mrg">- Plain external links, also called "inline style"</p>
+                    <p class="mrg">-- The easiest way to create a link is to just type an url with or without the &lt;&gt;</p>
+                    <p class="section-focus mrg">Tip: this also works for email addresses</p>
+                        <p>Typing:</p>
+                        <code class="code-ex mrg">
+                            https://wwww.google.com
+                        </code>
+                        <p>Or:</p>
+                        <code class="code-ex mrg">
+                            &lt;https://www.google.com&gt;
+                        </code>
+                        <p>Will give the same result as an &lt;a&gt; tag:</p>
+                        <p class="mrg"><a href="https://www.google.com">https://wwww.google.com</a></p>
+
+                    <p class="mrg">-- Yet, Markdown has its own syntax for adding links that looks like this: [text](href "alt"), 
+                        the "alt" text being optional and displaying in a bubble in Markdown (i.e. the equivalent of the title attribute for the &lt;a&gt; tag in HTML)</p>
+                        <p>In our case, it would be typing:</p>
+                            <code class="code-ex mrg">
+                                [Google](https://www.google.com)
+                            </code>
+                        <p>To get:</p>
+                        <p class="mrg"><a href="https://www.google.com">Google</a></p>
+                        <p>Or:</p>
+                            <code class="code-ex mrg">
+                                [Google Homepage](https://www.google.com "Google Homepage")
+                            </code>
+                        <p>To get:</p>
+                        <p class="mrg"><a href="https://www.google.com" title="Google Homepage">Google Homepage</a></p>
+                        <p class="section-focus mrg2">Tip: you can format links with italic or bold just like normal text (<a href="#Styling_and_Emphasis">see Section 5</a>)</p>
+
+                    <p class="mrg">- Recurrent external links, also called "reference style"</p>
+                    <p class="mrg">Let's imagine you're writing a book in Markdown and you need to use the same link in different places, 
+                        it's convenient to use one reference for all of these identical links</p>
+                    <p>In such a case, you can call a link many times like this:</p>
+                        <code class="code-ex mrg">
+                            [Google][useful]<br>
+                            [GitHub][1]<br>
+                            [freeCodeCamp]
+                        </code>
+                    <p>And add the url at one place, usually at the end of your file, like this:</p>
+                        <code class="code-ex mrg">
+                            [useful]: http://www.google.com<br>
+                            [1]: https://github.com/<br>
+                            [freeCodeCamp]: https://freeCodeCamp.org/<br>
+                        </code>
+
+                    <p class="mrg2">Note: it seems there's no equivalent to the target="" attribute in Markdown in GitHub, even with using an HTML &lt;a&gt; 
+                        tag and manually adding the attribute, which means your links will open in the same window when clicked upon</p>
+                </section>
+
+                <!-- Section 11 - Images -->
+                <section id="Images" class="main-section">
+                    <header class="section-header">Images</header>
+                    <h2 class="section-title">• Adding images in Markdown is quite the same as adding links</h2>
+                    
+                    <p class="section-content mrg">Adding images into Markdown uses the same syntax as for links with a "!" in front</p>
+                        <p>Typing this:</p>
+                        <code class="code-ex mrg">
+                            ![Markdown logo](http://bit.do/how-to-markdown)
+                        </code>
+                    <p>Will give the result below in Markdown:</p>
+                    <p id="markdown-logo" class="mrg"><img id="markdown-img" alt="Markdown logo" src="http://bit.do/how-to-markdown"></p>
+                    
+                    <p class="section-focus">Tip: it works as well for animated gifs 🎬</p>
+                    
+                    <p class="section-focus">Tip: to add a link to an image, you must combine image and link and use the following syntax</p>
+                        <code class="code-ex mrg">
+                            [![image](link to the image file)](url of the link on the image)
+                        </code>
+                    
+                    <p class="mrg">Note: just like in links, you can also add an "alt" text with this syntax <code class="code-ex inline">![text](href "alt")</code></p>
+                    <p class="mrg2">Note: the links "reference style" system (<a class="resource-link" href="#Links">see section 10</a>) can also be used for images you'd have to use many times in a file</p>
+                </section>
+
+                <!-- Section 12 - Backslash Escapes -->
+                <section id="Backslash_Escapes" class="main-section">
+                    <header class="section-header">Backslash Escapes</header>
+                    <h2 class="section-title">• Markdown allows you to use backslash escapes to generate literal characters 
+                        which would otherwise have special meaning in Markdown's formatting syntax</h2>
+                    
+                        <p>Typing this:</p>
+                            <code class="code-ex mrg">
+                                \*This is non-bold text between asterisks\*
+                            </code>
+                        <p>Will look like this below in Markdown:</p>
+                        <p class="mrg2">*This is non-bold text between asterisks*</p>
+                    
+                        <p class="mrg2">This works for the following characters:<br>
+                        \ (backslash), `(backtick), * (asterisk), _ (underscore), {} (curly braces), [] (square braces),
+                        () (parenthses), # (hash mark), + (plus sign), - (minus sign, or hyphen), . (dot), ! (exclamation mark)</p>
+                </section>
+
+                <!-- Section 13 - HTML -->
+                <section id="HTML_in_Markdown" class="main-section">
+                    <header class="section-header">HTML in Markdown</header>
+                    <h2 class="section-title">• As already seen, there are many occasions to use HTML in Markdown to create specific results<br>
+                        Here are a four more I use very often</h2>
+                    
+                    <p>- Undeline text with using the <code class="code-ex inline">&lt;ins&gt;to be underlined text&lt;/ins&gt;</code> HTML tag<p>
+                    <p class="mrg2">This is using a semantic tag in place of CSS, but that's the only way to get it right in Markdown 🤷</p>
+                    
+                    <p class="mrg2">- Center text or titles or images (or animated gif pretty often in my case) with inserting the style attribute
+                    <code class="code-ex inline">align="center"</code>
+                    in your HTML tag</p>
+
+                    <p>- Deal with YouTube videos</p>
+                    <p>They cannot be directly added but you can add an image with a link to the video:</p>
+                    <p>-- either with the usual Markdown syntax [![image](link to the image file)](url of the link on the image)</p>
+                    <p>-- or with HTML tags &lt;a&gt; and &lt;img&gt; to access the "width" and "height" attributes to style the image</p>
+                    <p class="mrg2">More <a class="resource-link" href="https://github.com/adam-p/markdown-here/wiki/Markdown-Here-Cheatsheet#youtube-videos" target="_blank">details here</a></p>
+
+                    <p>- Create tables of contents with inner links tag</p>
+                    <p>There are two ways to do that:</p>
+                    <p>-- using an &lt;a&gt; HTML tag to add a "name" attribute to each title,</p>
+                    <p>-- adding a {#custom-id} to each title,</p>
+                    <p>and then creating a simple link to each "name" attribute in your table of contents</p>
+                    <p class="mrg2">More <a class="resource-link" href="https://www.markdownguide.org/extended-syntax#heading-ids" target="_blank">details here</a></p>
+
+                    <p class="mrg">Note: you can add HTML inside Markdown, but you cannot add Markdown inside HTML</p>
+                    <p>Typing this:</p>
+                        <code class="code-ex mrg">
+                            &lt;p&gt;I want this text to be in **bold**&lt;/p&gt;
+                        </code>
+                    <p>Will look like this:</p>
+                    <p>I want this text to be in **bold**</p>
+                    <p class="mrg2">(No bold effect created since the Markdown was inside the HTML tag)</p>
+                </section>
+
+                <!-- Section 14 - GitHub Flavored Markdown-->
+                <section id="GitHub_Flavored_Markdown" class="main-section">
+                    <header class="section-header">GitHub Flavored Markdown</header>
+                    <h2 class="section-title">• GitHub being a big user of Markdown, it has its own version of the Markdown syntax 
+                        called GitHub Flavored Markdown or simply GFM<br>Here are five main GFM features</h2>
+                    
+                    <p>- Task Lists</p>
+                        <p class="mrg">A task list mixes a list (ordered or unordered) with squared brackets and will look like HTML checkboxes</p>
+                        <p>Typing this:</p>
+                            <code class="code-ex mrg">
+                                - [x] this is a "done" item<br>
+                                - [ ] this is a "to do" item<br>
+                            </code>
+                            <p>Will look like this:</p>
+                            <fieldset class="mrg2">
+                                <label for="done"><input id="done" value="done" type="checkbox" checked> this is a "done" item</label><br>
+                                <label for="todo"><input id="todo" value="todo" type="checkbox"> this is a "to do" item</label><br>
+                            </fieldset>
+
+                    <p>- Usernames @mentions</p>
+                        <p class="mrg2">Typing an @ symbol, followed by a username, will notify that person<br>
+                             You can also mention @teams within an organization</p>
+                    
+                    <p>- Issues and Pull requests references</p>
+                        <p class="mrg2">Any number that refers to an Issue or Pull Request will be automatically converted into a link</p>
+                    
+                    <p>- SHA references</p>
+                        <p class="mrg2">Any reference to a commit’s SHA-1 hash will be automatically converted into a link to that commit on GitHub</p>
+                    
+                    <p>- Emojis</p>
+                        <p class="mrg">GFM supports emojis with this syntax: :star: will automatically turn into ⭐</p>
+                    
+                    <p>More details in the links below:</p>
+                        <p><a class="resource-link" href="https://www.webpagefx.com/tools/emoji-cheat-sheet/" target="_blank">Emoji Markdown cheatsheet with Search bar</a></p>
+                        <p class="mrg2"><a class="resource-link" href="https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md" target="_blank">Other Emoji Markdown cheatsheet</a></p>
+                </section>
+
+                <!-- Section 15 - Contact -->
+                <section id="Contact" class="main-section">
+                    <header class="section-header">Contact</header>
+                    <div class="sm-icons mrg2">
+                        <h2 class="section-title">• For any typo, comment, suggestion... please get in touch with me</h2>
+                        <a href="https://twitter.com/codingk8" target="_blank"><i class="fab fa-twitter-square sm-icon"></i></a>
+                    </div>
+                    <!--
+                    <div class="sm-icons mrg2">
+                        <h2 class="section-title">• An idea of a possible complement? Consider submitting a pull request</h2>
+                        <a href="https://github.com/codingk8" target="_blank"><i class="fab fa-github sm-icon sm-icon"></i></a>
+                    </div>
+                    -->
+                </section>
+
+                <!-- Section 16 - Resources -->
+                <section id="Additional_Resources" class="main-section">
+                    <header class="section-header">Additional Resources</header>
+                    <h2 class="section-title">• Markdown around the web 🌏</h2>
+                    <ul class="margin-left">
+                        <li class="resources-item"><a class="resource-link" href="https://en.wikipedia.org/wiki/Markdown" target="_blank">Markdown in Wikipedia</a></li>
+                        <li class="resources-item"><a class="resource-link" href="https://daringfireball.net/projects/markdown/" target="_blank">Official Markdown website by John Gruber</a></li>
+                        <li class="resources-item"><a class="resource-link" href="https://www.markdownguide.org/" target="_blank">Markdown Guide</a></li>
+                        <li class="resources-item"><a class="resource-link" href="https://github.com/adam-p/markdown-here/wiki" target="_blank">Markdown Wiki</a></li>
+                        <li class="resources-item"><a class="resource-link" href="https://github.com/dcurtis/markdown-mark" target="_blank">Markdown Mark by Dustin Curtis</a></li>
+                        <li class="resources-item"><a class="resource-link" href="https://guides.github.com/features/mastering-markdown/" target="_blank">GitHub Guide - Mastering Markdown</a></li>
+                        <li class="resources-item"><a class="resource-link" href="https://help.github.com/categories/writing-on-github/" target="_blank">GitHub - Writing on GitHub</a></li>
+                        <li class="resources-item"><a class="resource-link" href="https://help.github.com/en/articles/basic-writing-and-formatting-syntax" target="_blank">GitHub Article - Basic Writing and Formatting Syntax</a></li>
+                        <li class="resources-item"><a class="resource-link" href="https://nodeschool.io/index.html" target="_blank">NodeSchool "How to Markdown" tutorial</a></li>
+                        <li class="resources-item"><a class="resource-link" href="https://wesbos.com/mastering-markdown/" target="_blank">"Mastering Markdown" by Wes Bos</a></li>
+                        <li class="resources-item"><a class="resource-link" href="https://www.markdowntutorial.com/" target="_blank">Markdown tutorial for beginners</a></li>
+                    </ul>
+                </section>
+
+            <!-- End of main-content: all the sections -->
+            </main>
+
+            <!-- Back-to-top icon -->
+            <a href="#"><i class="far fa-arrow-alt-circle-up" id="btticon"></i></a>
+
+        </div> <!-- End of NavBar + Main Content-->
+
+        <!-- Footer & credits section -->
+        <footer>
+            <p class="footer-text"><a class="footer-link" href="https://github.com/codingk8/markdown-up-and-running" target="_blank">About</a>   
+                |   Made with code 👩🏻‍💻 and care ✨in Paris, France   
+                |   By <a class="footer-link" href="https://codingk8.github.io/" target="_blank">Codingk8</a> - 2019<p>
+        </footer>
+        
+
+        <!-- Import jQuery CDN - ALWAYS CHECK THE VERSION - From Bootstrap 20190214 -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        
+        <!-- Import jQuery CDN from jQuery -->
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+        <!-- Import js scripts -->
+        <script src="scripts.js"></script>
+
+        <!-- Import freeCodeCamp test link script 
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        -->
+    
+    </body>
+
+<!--
+    End of HTML file ;o)
+-->
