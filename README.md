@@ -3,7 +3,7 @@
 <h2 align="center">Project made for <a href="https://www.freecodecamp.org/">freeCodeCamp</a><br>"Responsive Web Design" certification</h2>
 
 
-<p align="center"><img src="assets/images/20190404_codingk8_markdown_up_and_running_dark_mode_validated_screenshot.png" alt="Markdown up and running Screenshot" width="1650px"></p>
+<p align="center"><img src="assets/readme/20190404_codingk8_markdown_up_and_running_dark_mode_validated_screenshot.png" alt="Markdown up and running Screenshot" width="1650px"></p>
 
 ---
 
