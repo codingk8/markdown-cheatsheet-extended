@@ -1,0 +1,683 @@
+/* -------------------------------------------------------------------------
+    Made with code and care in Paris, France, by Codingk8 - 2019 - Twitter: @codingk8
+
+    Project made for the freeCodeCamp curriculum, "Responsive Web Design" Certification
+    Project #4 - Technical Documentation
+
+    Title: Markdown up and running - An extended cheatsheet
+-------------------------------------------------------------- */
+
+
+/* Google font
+
+font-family: 'Ubuntu Mono', monospace;
+*/
+
+
+/* ------------------------ */
+/* --- General style => --- */
+/* ------------------------ */
+
+:root {
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    position: relative; /* For the Bootstrap scroll spy */
+
+    font-family: 'Ubuntu Mono', monospace;
+
+    --dark-color: #212121;
+    --light-color-color: #d4d4d4;
+
+    color: var(--dark-color, black);
+}
+
+body p {
+    margin: 0;
+}
+
+.inline {
+    display: inline;
+}
+
+.mrg {
+    margin-bottom: 1rem;
+}
+
+.mrg2 {
+    margin-bottom: 3rem;
+}
+
+
+/* ---------------------------- */
+/* --- Light | Dark mode => --- */
+/* ---------------------------- */
+
+body.dark {
+    background-color: var(--dark-color, black);
+    color: white;
+}
+
+body.dark .nav-link {
+    color: white;
+}
+
+body.dark .list-group-item-action:hover {
+    color: white;
+}
+
+body.dark #mode {
+    color: white;
+}
+
+body.dark #header-title {
+    color: var(--dark-color, black);
+}
+
+body.dark #mode:hover {
+    color: var(--dark-color, black);
+}
+
+body.dark .sm-icon {
+    color: white;
+}
+
+body.dark .resource-link {
+    color: white;
+    text-decoration: underline;
+}
+
+body.dark .resource-link:hover {
+    color: white;
+    text-decoration: none;
+}
+
+body.dark table {
+    border: 1px solid white;
+}
+
+body.dark th, body.dark td {
+    border: 1px solid white;
+}
+
+body.dark #btticon {
+    background-color: var(--dark-color, black);
+}
+
+
+/* ----------------------- */
+/* --- Header style => --- */
+/* ----------------------- */
+
+#header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+
+    background-color: white;
+
+    border-bottom: solid 1px var(--light-color, lightgrey);
+    padding: 1%;
+    margin-bottom: 1%;
+
+    width: 100%;
+
+    position: fixed;
+    top: 0px;
+    z-index: 10;
+}
+
+#header-title {
+    font-size: 2rem;
+    margin-right: 1%;
+    margin-bottom: 0%;
+    line-height: 0;
+}
+
+#logo {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    /* https://getbootstrap.com/docs/4.3/content/images/ */
+}
+
+
+/* ---------------------- */
+/* --- Div Content => --- */
+/* ---------------------- */
+
+#content {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+/* ----------------------- */
+/* --- NavBar style => --- */
+/* ----------------------- */
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 22.5vw;
+    padding: 5% 0% 5% 1%;
+
+    height: 100vh;
+    z-index: 0;
+
+
+    font-size: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* align-items: center; */ /* To avoid pb with the padding on the ol items then going on a second line */
+
+    border-right: solid 1px var(--light-color, lightgrey);
+}
+
+#nav-header {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 15%;
+}
+
+
+/* --- nav a => --- */
+
+.list-group-item {
+    color: var(--dark-color, black);
+    border: none;
+    background-color: transparent;
+    margin: 0 1%;
+    padding: 0 1%;
+}
+
+.nav-link.active {
+    border: none;
+    background-color: var(--light-color, lightgrey);
+    border-radius: 5px;
+    padding: 0% 3%;
+}
+
+.list-group-item-action {
+    background-color: transparent;
+}
+
+
+/* --- nav a:hover => --- */
+
+.list-group-item-action:hover {
+    text-decoration: underline;
+    background-color: transparent;
+    color: var(--dark-color, black);
+}
+
+
+/* --- NavBar => "Light mode | Dark mode" button => --- */
+
+#mode {
+    text-align: center;
+    padding: 2% 3% 2% 3%;
+    background-color: var(--light-color, lightgrey);
+    border-radius: 5px;
+    
+    align-self: center;
+}
+
+#mode:hover {
+    color: white;
+}
+
+button {
+    border: none;
+}
+
+
+/* ------------------------ */
+/* --- Main style => --- */
+/* ------------------------ */
+
+#main-doc {
+    padding: 1% 5% 5% 2.5%;
+    margin-left: 25vw;
+}
+
+#intro {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 25vh;
+    text-align: center;
+}
+
+
+/* --------------------------- */
+/* --- For all Sections => --- */
+/* --------------------------- */
+
+.main-section {
+    padding-bottom: 25px;
+    border-bottom: solid 1px var(--light-color, lightgrey);
+}
+
+.section-header {
+    font-size: 1.75rem;
+    color: darkgrey;
+    padding-top: 12.5vh;
+    padding-left: 6%;
+}
+
+.section-title {
+    font-size: 1.3rem;
+    padding-left: 3%;
+    margin: 2% 0;
+}
+
+.section-focus {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+}
+
+code {
+    display: block;
+    font-size: 0.85rem;
+}
+
+.code-ex {
+    color: HotPink;
+}
+
+.inline { /* for code lines */
+    display: inline;
+}
+
+.mrg { /* For all tags with a single bottom margin in replacement of <br> */
+    margin-bottom: 1rem;
+}
+
+.mrg2 { /* For all tags with an larger bottom marginin replacement of <br> */
+    margin-bottom: 3rem;
+}
+
+
+/* ----------------------------------- */
+/* --- Horizontal Rules Section => --- */
+/* ----------------------------------- */
+
+#hr-example {
+    background-color: #eee;
+    border: 0 none;
+    color: #eee;
+    height: 4px;
+}
+
+
+/* --------------------------------------- */
+/* --- Styling and Emphasis Section => --- */
+/* --------------------------------------- */
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+}
+
+
+/* ------------------------- */
+/* --- Quotes Section => --- */
+/* ------------------------- */
+
+.quote {
+    border-left: solid 3px lightgrey;
+    padding-left: 15px;
+}
+
+
+/* ------------------------ */
+/* --- Lists Section => --- */
+/* ------------------------ */
+
+.nl-ex {
+    margin-left: 20px;
+}
+
+
+/* ------------------------------ */
+/* --- Code Blocks Section => --- */
+/* ------------------------------ */
+
+.md-code {
+    background-color: lightgrey;
+    color: black;
+    opacity: 0.7;
+    padding: 4px;
+}
+
+.md-code2 {
+    background-color: lightgrey;
+    opacity: 0.7;
+    padding: 10px;
+    line-height: 2;
+    display: block;
+}
+
+.blueviolet {
+    color: blueviolet;
+}
+
+.blue {
+    color: blue;
+}
+
+.black {
+    color: black;
+}
+
+
+/* ----------------- */
+/* --- Tables => --- */
+/* ----------------- */
+
+table {
+    border: 1px solid var(--dark-color, black);
+}
+
+.td2 {
+    background-color: var(--light-color, lightgrey);
+}
+
+th, td {
+    border: 1px solid var(--dark-color, black);
+    padding: 10px 20px;
+}
+
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+
+/* ------------------------- */
+/* --- Images Section => --- */
+/* ------------------------- */
+
+#markdown-img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* ----------------------- */
+/* --- GHFM Section => --- */
+/* ----------------------- */
+
+label {
+    margin: 0 0 0 10px;
+}
+
+
+/* -------------------------- */
+/* --- Contact Section => --- */
+/* -------------------------- */
+
+.sm-icons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.sm-icon {
+    font-size: 4rem;
+    color: var(--dark-color, black);
+    margin-left: 10px;
+}
+
+.sm-icon:hover {
+    opacity: 0.5;
+}
+
+
+/* ---------------------------- */
+/* --- Resources Section => --- */
+/* ---------------------------- */
+
+#Additional_Resources {
+    border-bottom: 0px;
+}
+
+.margin-left {
+    margin-left: 15%;
+}
+
+.resource-link {
+    color: var(--dark-color, black);
+    text-decoration: underline;
+}
+
+.resource-link:hover {
+    color: var(--dark-color, black);
+    text-decoration: none;
+}
+
+
+/* --------------------------------- */
+/* --- The "back to top" icon => --- */
+/* --------------------------------- */
+
+#btticon {
+    font-size: 2rem;
+    color: var(--light-color, lightgrey);
+    background-color: white;
+    position: fixed;
+    bottom: 15%;
+    right: 2%;
+    z-index: 0;
+}
+
+#btticon:hover {
+    opacity: 0.5;
+    /* transform: translateY(-5px); */ /* See JS effect instead */
+}
+
+
+/* ----------------------- */
+/* --- Footer style => --- */
+/* ----------------------- */
+
+footer {
+    background-color: var(--light-color, lightgrey);
+    color: white;
+
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 0.4%;
+
+    position: absolute;
+    bottom: 0px;
+    z-index: 10;
+
+    margin-top: 1%;
+
+    width: 100%;
+
+    padding: 0 2%;
+}
+
+.footer-text {
+    margin: 0;
+}
+
+.footer-link {
+    color:white;
+    text-decoration: underline;
+}
+
+.footer-link:hover {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* ------------------------ */
+/* --- Media queries => --- */
+/* ------------------------ */
+
+/* Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { ... }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { ... } */
+
+@media (max-width: 767.98px) {
+
+    :root {
+        font-size: 12px;
+    }
+
+    #header-title {
+        font-size: 75%;
+    }
+
+    #navbar {
+        width: 35vw;
+        padding: 15% 0% 15% 5%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        line-height: 1;
+    }
+
+    #nav-header {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    #mode {
+        margin-top: 1rem;
+    }
+
+    #main-doc {
+        margin-left: 37.5vw;
+        padding: 1% 3% 15% 0%;
+    }
+
+    #intro {
+        height: 30vh;
+    }
+
+    #btticon {
+        font-size: 1.5rem;
+        position: fixed;
+        bottom: 15%;
+        right: 1%;
+    }
+
+    th, td {
+        font-size: 0.8rem;
+        padding: 5px 10px;
+    }
+
+    .sm-icons {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    :root {
+        font-size: 14px;
+    }
+
+    #header-title {
+        font-size: 90%;
+    }
+
+    #navbar {
+        width: 35vw;
+        padding: 15% 0% 15% 5%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        line-height: 1;
+    }
+
+    #nav-header {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    #mode {
+        margin-top: 1rem;
+    }
+
+    #main-doc {
+        margin-left: 37.5vw;
+        padding: 1% 3% 15% 0%;
+    }
+
+    #intro {
+        height: 30vh;
+    }
+
+    #btticon {
+        font-size: 1.5rem;
+        position: fixed;
+        bottom: 15%;
+        right: 1%;
+    }
+
+    th, td {
+        font-size: 0.8rem;
+        padding: 5px 10px;
+    }
+
+}
+
+/* Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+
+/* Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... } */
+
+
+/* ------------------- */
+/* End of CSS file :o) */
+/* ------------------- */
