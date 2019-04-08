@@ -82,7 +82,8 @@
 
 ## Acknowledgements & Resources
 
-[Here](https://codingk8.github.io/markdown-up-and-running/#Additional_Resources)
+[Here](https://codingk8.github.io/markdown-up-and-running/#Additional_Resources)  
+Also [here](https://medium.freecodecamp.org/how-to-get-dark-mode-working-with-css-740ad31e22e)
 <br>
 
 ---
